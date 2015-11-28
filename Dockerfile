@@ -2,8 +2,7 @@ FROM phusion/baseimage
 
 MAINTAINER Yuri Vysotskiy (yfix) <yfix.dev@gmail.com>
 
-RUN \
-  && apt-get update && apt-get install -y software-properties-common \
+RUN apt-get update && apt-get install -y software-properties-common \
   && apt-get update && add-apt-repository -y ppa:builds/sphinxsearch-beta \
   && apt-get update && apt-get install -y sphinxsearch \
   \
